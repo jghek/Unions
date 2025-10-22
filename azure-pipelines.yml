@@ -64,10 +64,10 @@ jobs:
           versioningScheme: byBuildNumber
           verbosityPack: 'Normal'
 
-      - task: NuGetCommand@2
-        displayName: 'NuGet push'
+      - task: DotNetCoreCLI@2
+        displayName: 'Push'
         condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
         inputs:
-          command: custom
-          arguments: push $(Build.ArtifactStagingDirectory)/*.nupkg $(NuGetApiKey) -Source $(NuGetSource)
-
+          command: 'custom'
+          custom: 'nuget'
+          arguments: 'push $(Build.ArtifactStagingDirectory)/*.nupkg --source $(NuGetSource) --api-key $(NuGetApiKey)'
