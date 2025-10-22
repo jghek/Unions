@@ -1,6 +1,6 @@
-# Unions
+# Qtopia.Unions
 
-**Unions** provides minimal, allocation-free discriminated unions for C#, aligned with the [official C# unions language proposal](https://github.com/dotnet/csharplang/blob/main/proposals/unions.md).
+**Qtopia.Unions** provides minimal, allocation-free discriminated unions for C#, aligned with the [official C# unions language proposal](https://github.com/dotnet/csharplang/blob/main/proposals/unions.md).
 
 It's designed to be **drop-in compatible** with the upcoming native feature - giving you modern, idiomatic C# union types today.
 
@@ -36,13 +36,13 @@ Each union is an immutable `readonly struct` that supports:
 Add **Unions** from NuGet:
 
 ```bash
-dotnet add package Unions
+dotnet add package Qtopia.Unions
 ```
 
 Or via the Visual Studio Package Manager:
 
 ```powershell
-Install-Package Unions
+Install-Package Qtopia.Unions
 ```
 
 ---
