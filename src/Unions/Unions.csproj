@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageId>Qtopia.Unions</PackageId>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
     <PackageIcon>unions.png</PackageIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>ObjectHasher</Title>
+    <Title>Unions</Title>
     <Authors>jghek</Authors>
     <Company>Qtopia NL</Company>
     <Description>Unions provides minimal, allocation-free discriminated unions for C#, aligned with the official C# unions language proposal. It’s designed to be near drop-in compatible with the upcoming native feature. Giving you modern, idiomatic C# union types today.</Description>
