@@ -9,7 +9,7 @@
     <Title>Unions</Title>
     <Authors>jghek</Authors>
     <Company>Qtopia NL</Company>
-    <Description>Unions provides minimal, allocation-free discriminated unions for C#, aligned with the official C# unions language proposal. It’s designed to be near drop-in compatible with the upcoming native feature. Giving you modern, idiomatic C# union types today.</Description>
+    <Description>Minimal, allocation-free discriminated unions for C#, aligned with the C# unions language proposal. It's designed to be drop-in compatible with the upcoming native feature. Giving you modern, idiomatic C# union types today.</Description>
     <Copyright>(c) 2025 by J.G.Hek</Copyright>
     <PackageProjectUrl>https://github.com/jghek/Unions</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>

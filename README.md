@@ -174,11 +174,11 @@ else if (result.TryGet(out string s))
 
 ## Limitations
 
-* Provided for **2–9 generic parameters** (`Union<T1,T2>` ... `Union<T1,...,T9>`).
+* Provided for **2-9 generic parameters** (`Union<T1,T2>` ... `Union<T1,...,T9>`).
   The pattern can be extended if needed.
 * No built-in equality or comparison operators (matches proposal minimalism).
 * No custom serialization included - add converters as needed for JSON or binary serialization.
-* Intentionally minimal: this is not a “Result” or “Option” monad library.
+* Intentionally minimal: this is not a "Result" or "Option" monad library.
 
 ---
 
@@ -201,5 +201,5 @@ Distributed under the `MIT license`. See the included `LICENSE` file for details
 ## Links
 
 * GitHub Repository: [github.com/jghek/Unions](https://github.com/jghek/Unions)
-* C# Language Proposal: [dotnet/csharplang – Unions](https://github.com/dotnet/csharplang/blob/main/proposals/unions.md)
+* C# Language Proposal: [dotnet/csharplang - Unions](https://github.com/dotnet/csharplang/blob/main/proposals/unions.md)
 * NuGet Package: [Unions](https://www.nuget.org/packages/Unions)
