@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unions", "src\Unions\Unions.csproj", "{E0F16CAF-1621-48DD-A03F-ECF04D344E11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unions.Tests", "tests\Unions.Tests\Unions.Tests.csproj", "{EAE27FE5-74CA-4437-9458-1691B79739E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Package", "Package", "{A5375117-D3FE-4FA8-9D55-BFB91510FBEC}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+		LICENSE = LICENSE
+		README.md = README.md
+		package\unions.png = package\unions.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0F16CAF-1621-48DD-A03F-ECF04D344E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F16CAF-1621-48DD-A03F-ECF04D344E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F16CAF-1621-48DD-A03F-ECF04D344E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F16CAF-1621-48DD-A03F-ECF04D344E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE27FE5-74CA-4437-9458-1691B79739E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE27FE5-74CA-4437-9458-1691B79739E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE27FE5-74CA-4437-9458-1691B79739E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE27FE5-74CA-4437-9458-1691B79739E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9D9F93C-7504-4D9F-B335-DCB176BDFF12}
+	EndGlobalSection
+EndGlobal
