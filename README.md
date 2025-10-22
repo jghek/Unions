@@ -2,32 +2,32 @@
 
 **Unions** provides minimal, allocation-free discriminated unions for C#, aligned with the [official C# unions language proposal](https://github.com/dotnet/csharplang/blob/main/proposals/unions.md).
 
-It’s designed to be **drop-in compatible** with the upcoming native feature — giving you modern, idiomatic C# union types today.
+It's designed to be **drop-in compatible** with the upcoming native feature - giving you modern, idiomatic C# union types today.
 
 ---
 
 ## Why this exists
 
-C# doesn’t yet support native union types, but the design is already defined in the official proposal.
-This library implements that proposal’s shape and semantics with minimal overhead:
+C# doesn't yet support native union types, but the design more or less defined in the official proposal.
+This library implements that proposal's shape and semantics with minimal overhead:
 
 * Mirrors the syntax and behavior described in the C# language proposal.
 * Easy to **adopt now** and **remove later** with minimal refactoring.
-* Encourages **pattern matching** and standard C# flow control — no custom functional abstractions required.
+* Encourages **pattern matching** and standard C# flow control - no custom functional abstractions required.
 
 ---
 
-## What’s included
+## What's included
 
-`Union<T1, T2>` through `Union<T1, …, T9>`
+`Union<T1, T2>` through `Union<T1, ..., T9>`
 
 Each union is an immutable `readonly struct` that supports:
 
-* **Implicit conversion** from any of its case types (`T1` … `Tn`).
+* **Implicit conversion** from any of its case types (`T1` ... `Tn`).
 * **`TryGet(out Tn)`** to safely extract a specific case.
 * **`Value`** exposing the contained object for pattern matching.
 * **`ToString()`** forwarding to the stored value (or `"null"`).
-* **Thread safety** and immutability — all members are readonly.
+* **Thread safety** and immutability - all members are readonly.
 
 ---
 
@@ -116,11 +116,11 @@ else if (result.TryGet(out string s))
 
 | Member                  | Description                                                                           |
 | ----------------------- | ------------------------------------------------------------------------------------- |
-| **Constructors**        | `new Union<T1,…>(Tn value)` for each supported type.                                  |
+| **Constructors**        | `new Union<T1,...>(Tn value)` for each supported type.                                  |
 | **Implicit conversion** | Automatically converts any `Tn` into the union type.                                  |
 | **TryGet**              | `bool TryGet(out Tn value)` safely extracts a case value.                             |
 | **Value**               | `object? Value { get; }` exposes the stored value for inspection or pattern matching. |
-| **ToString()**          | Delegates to the underlying value’s `ToString()` or returns `"null"`.                 |
+| **ToString()**          | Delegates to the underlying value's `ToString()` or returns `"null"`.                 |
 
 ---
 
@@ -174,10 +174,10 @@ else if (result.TryGet(out string s))
 
 ## Limitations
 
-* Provided for **2–9 generic parameters** (`Union<T1,T2>` … `Union<T1,…,T9>`).
+* Provided for **2–9 generic parameters** (`Union<T1,T2>` ... `Union<T1,...,T9>`).
   The pattern can be extended if needed.
 * No built-in equality or comparison operators (matches proposal minimalism).
-* No custom serialization included — add converters as needed for JSON or binary serialization.
+* No custom serialization included - add converters as needed for JSON or binary serialization.
 * Intentionally minimal: this is not a “Result” or “Option” monad library.
 
 ---
